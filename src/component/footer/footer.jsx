@@ -104,9 +104,9 @@ function footer() {
                         <div className='px-2 py-1 justify-center items-center flex mr-4   border-solid border text-white  border-white'>
                            <IoLogoLinkedin/>
                         </div>
-                        <div className='px-2 py-1 justify-center items-center flex  border-solid border text-white  border-white'>
+                        <a href='https://www.youtube.com/@Eminenture/playlists' target='blank' className='px-2 py-1 justify-center items-center flex  border-solid border text-white  border-white'>
                            <IoLogoYoutube/>
-                        </div>
+                        </a>
                     </div>
                     <p className='text-white mt-3'>Eminenture Technologies Copyright © 2023. All Rights Reserved.</p>
                 </div>

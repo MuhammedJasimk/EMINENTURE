@@ -1,6 +1,31 @@
 import React, { useState } from 'react'
+import { motion } from "framer-motion"
+
+
 
 function Service() {
+
+    const ballStyle = {
+        display: "block",
+        width: "1rem",
+        height: "1rem",
+        backgroundColor: "black",
+        borderRadius: "0.5rem"
+    };
+
+    const bounceTransition = {
+        y: {
+            duration: 1.3,
+            repeat: Infinity,
+            repeatType: 'reverse'
+        },
+        backgroundColor: {
+            duration: 3,
+            yoyo: Infinity,
+            ease: "easeOut",
+            repeatDelay: 1.8
+        }
+    };
 
     const [service, setService] = useState(false)
     return (
@@ -31,7 +56,12 @@ function Service() {
 
                     </div>
                     <div className='md:w-2/4'>
-                        <img src="https://www.eminenturetech.com/images/em-maininfographics/eCommerce-Development-Solutions.png" alt="" />
+                        <motion.img transition={bounceTransition}
+                            animate={{
+                                y: ["2%", "-0%"],
+                                // backgroundColor: ["#ff6699", "#6666ff"]
+                            }}
+                           src="https://www.eminenturetech.com/images/em-maininfographics/eCommerce-Development-Solutions.png" alt="" />
                     </div>
                 </div>
                 {
@@ -45,35 +75,35 @@ function Service() {
                             We ensure it through periodic maintenance and frequent updates</p>
 
 
-                            <p className='bg-black text-white service_Head'> Seamless Order Management     </p>
+                        <p className='bg-black text-white service_Head'> Seamless Order Management     </p>
                         <p className='mt-4 font-light'>Our experts design superior order management and carting solutions.
-                         With their smooth functionality, you see your customers get a great web experience. They maximize
-                          satisfaction upon experiencing the robust and reliable shopping cart solution. We test it seriously 
-                          before making it live. It ensures an error-free order management, no matter how many orders are 
-                          aligned at a time</p>
+                            With their smooth functionality, you see your customers get a great web experience. They maximize
+                            satisfaction upon experiencing the robust and reliable shopping cart solution. We test it seriously
+                            before making it live. It ensures an error-free order management, no matter how many orders are
+                            aligned at a time</p>
 
 
-                            <p className='bg-black text-white service_Head'>Cross-Browser Compatibility</p>
-                        <p className='mt-4 font-light'>The technology updates itself every day. The static one can never 
-                        survive in the digital environment. We come with fast and mobile solutions. These are the essential
-                         ones that make your eCommerce journey amazing. With some really quick and seamless responsive designs,
-                          your online store works efficiently. We make it adaptive to cross-browsers. It means that your user's
-                           web journey does not have any interference from any browsers. Our web products have strong security 
-                           protocols and encryption. These ensure that no hacking attempt can disturb your user's web experience
+                        <p className='bg-black text-white service_Head'>Cross-Browser Compatibility</p>
+                        <p className='mt-4 font-light'>The technology updates itself every day. The static one can never
+                            survive in the digital environment. We come with fast and mobile solutions. These are the essential
+                            ones that make your eCommerce journey amazing. With some really quick and seamless responsive designs,
+                            your online store works efficiently. We make it adaptive to cross-browsers. It means that your user's
+                            web journey does not have any interference from any browsers. Our web products have strong security
+                            protocols and encryption. These ensure that no hacking attempt can disturb your user's web experience
                             during account creation, transaction & browsing.</p>
 
 
 
-                            <p className='bg-black text-white service_Head'>Great Shopping Possibilities</p>
-                        <p className='mt-4 font-light'>Our e-commerce website solutions are smooth because of search engine 
-                        optimization strategy integration. It means that we make it the right-fit to run in accordance with 
-                        Google or other search engine guidelines. It lets us deliver a seamless and impressive shopping
-                         experience to your users. We employ the latest trends and technologies to make a big difference
-                          to your returns. Our experts create a possibility to merge CRM and CMS with it. With these two
-                           tools, you can discover the secret of engaging, onboarding and converting leads in no time. 
-                           You can provide content as per the content marketing strategy. Your CRM & CMS can let you 
-                           analyze and prepare the best customer experience in no time. As a result, you get more customers 
-                           and maximize returns.</p>
+                        <p className='bg-black text-white service_Head'>Great Shopping Possibilities</p>
+                        <p className='mt-4 font-light'>Our e-commerce website solutions are smooth because of search engine
+                            optimization strategy integration. It means that we make it the right-fit to run in accordance with
+                            Google or other search engine guidelines. It lets us deliver a seamless and impressive shopping
+                            experience to your users. We employ the latest trends and technologies to make a big difference
+                            to your returns. Our experts create a possibility to merge CRM and CMS with it. With these two
+                            tools, you can discover the secret of engaging, onboarding and converting leads in no time.
+                            You can provide content as per the content marketing strategy. Your CRM & CMS can let you
+                            analyze and prepare the best customer experience in no time. As a result, you get more customers
+                            and maximize returns.</p>
                     </div>}
                 <div className='pl-[30px]'>
                     <button onClick={() => { setService(!service) }} class="bg-transparent  border-2 text-black font-semibold text-[18px] px-3 py-1 mt-6 border-black ">

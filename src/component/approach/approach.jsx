@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { motion } from "framer-motion"
 function approach() {
 
     const approach_bg = {
@@ -14,7 +14,8 @@ function approach() {
             <div className='flex flex-row'>
                 <div className='md:basis-1/2'></div>
                 <div className='md:basis-1/2  flex  h-full '>
-                    <div className='bg-[#ffffffb8] p-6'>
+                    <motion.div className='bg-[#ffffffb8] p-6' initial={{ x: "-30%" }}
+                    whileInView={{ x: 0 }}  transition={{duration:0.6,ease:'easeOut'}}>
                         <p className='text-[48px] font-semibold'>Our Approach</p>
                         <p className='text-[21px] mt-[10px]'>We define our approach in a statement of work, which covers end-to-end ideology to achieve a benchmarked website.</p>
                         <div className='mt-7'>
@@ -35,7 +36,7 @@ function approach() {
                                 <p className='text-[24px]'> Delivery  </p>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                     <div className='md:w-[25%]'></div>
                 </div>
             </div>

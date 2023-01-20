@@ -5,6 +5,7 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 .service_Head::after{
    content: '';
@@ -51,4 +52,15 @@ body{
 
 .mainSubset:hover .subset{
   bottom: 0px;
+}
+.audit_button_form{
+  transform: skew(63deg)
+}
+.case_study_card:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+.slick-slide {
+  padding:10px;
+  text-align:center;
 }
