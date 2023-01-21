@@ -1,11 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-import React,{lazy,Suspense} from 'react'
+import React,{Suspense} from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Home from "./pages/landing/landing";
+import Home from "./pages/landing/landing";
 import { AppContext } from "./context/appContext";
 import { useState } from 'react';
-const Home =lazy(()=>import('./pages/landing/landing'))
 
 
 

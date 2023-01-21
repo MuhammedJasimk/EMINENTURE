@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function Inquire() {
     return (
         <div className='md:flex md:flex-row'>
