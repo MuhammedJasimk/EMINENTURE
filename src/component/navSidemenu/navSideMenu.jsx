@@ -13,7 +13,7 @@ function NavSideMenu() {
          animate={{right:100,opacity:1}}
          exit={{x:200,opacity:0,}}
          transition={{duration:0.3,ease:'easeOut'}}
-        className='bg-[#000000a8] text-white w-[27%] z-50 p-6 fixed top-0 bottom-0 right-0'>
+        className='bg-[#000000a8] text-white w-full sm:w-[27%] z-50 p-6 fixed top-0 bottom-0 right-0'>
             <div className='flex justify-between'>
                 <img src="https://www.eminenturetech.com/new-images/logo-new-2.png" alt="" />
                 <div className='rounded-full cursor-pointer  p-3 bg-white' onClick={()=>{setSidebar(false)}}>
